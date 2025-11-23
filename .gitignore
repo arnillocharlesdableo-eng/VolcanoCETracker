@@ -1,3 +1,33 @@
+git add .gitignore               # Stage the modified file
+git commit -m "Add Java ignore patterns"  # Commit the changes
+git push origin main             # Push the update to GitHub
+# ----------------------------------------------------------------------
+# Python/Environment Ignore Patterns
+# ----------------------------------------------------------------------
+venv/
+env/
+.env/
+.venv/
+__pycache__/
+*.pyc
+secrets.py
+.env
+
+# ----------------------------------------------------------------------
+# Local Data and Output Files (From API tracking)
+# ----------------------------------------------------------------------
+/data/
+/logs/
+*.csv
+*.json
+*.sqlite
+usgs_raw_data.json
+phivolcs_status.txt
+tracker_cache.dat
+
+# ----------------------------------------------------------------------
+# Java/Compiled Files Ignore Patterns (From your image)
+# ----------------------------------------------------------------------
 # Compiled class file
 *.class
 
@@ -10,7 +40,7 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files
 *.jar
 *.war
 *.nar
@@ -19,6 +49,13 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# virtual machine crash logs
 hs_err_pid*
 replay_pid*
+
+# ----------------------------------------------------------------------
+# Operating System & Editor Files
+# ----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
